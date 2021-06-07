@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+:root{
+    --primaryColor:#252830;
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #ea110c;
+    --bs-secondary: #d0d4d9;
+    --bs-success: #28a745;
+    --bs-info: #17a2b8;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f7f8f9;
+    --bs-dark: #19191c;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    
+}
+
+/* Hero start */
+.hero {
+    height:12vh;
+    background-color:var(--bs-dark);
+    position:fixed;
+    width:100%;
+    /* Add drop shadow */
+}
+
+.hero .header {
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    font-family:"balsamiq";
+    padding:0.5rem 1rem;
+
+    
+}
+
+.hero .header .logo{
+    font-size: 2.125em;
+    padding:8px 10px;
+    color:var(--bs-light);
+    align-self: flex-start;
+
+}
+
+.hero .header .search{
+    display:flex;
+    align-items: center;
+}
+.hero .header .search input{
+    background-color:var(--bs-light);
+    padding:.33em .75em;
+    border-radius:6px;
+    border-bottom-right-radius: 0;
+    border:0px;
+    line-height: 2;
+    text-decoration: none;
+
+}
+.hero .header .search .btn{
+    background-color:var(--bs-primary);
+    border: .125rem solid transparent;
+    padding: .375rem .75rem;
+    border-radius: 6px;
+    border-bottom-left-radius: 0;
+
+}
+
+.hero .header .menu{
+    display:flex;
+    justify-content: space-between;
+    padding-right:24px ;
+    position:relative;
+   
+}
+
+.hero .header .menu  .Browse,.Movies,.Series{
+    color: var(--bs-primary);   
+    text-decoration: none;
+    padding-right: 12px; 
+    font-size: 1.25em;
+    font-weight: bold;
+    left:23px;
+}
+
+.hero .header .menu   :hover{
+    color: var(--bs-light);   
+
+
+}
+
+/* Hero end */
+
+
+
+/* Popular */ 
+.popular{
+    padding:8px 30px;
+    position:relative;
+    top:60px;
+}
+.popular .holder{
+    display:flex;
+    justify-content:center;
+    border-bottom: 2px solid rgb(139, 135, 135);
+    padding:4px 15px;
+}
+
+.popular .trending{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items:space-between;  
+    padding:4px 40px;
+    padding: 0 5px ;
+
+
+  
+}
+.popular .trending .card{
+    display:flex;
+    border:5px solid var(--bs-dark);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3); /* this adds the "card" effect */
+    margin:0.313em;
+
+
+}
+
+.popular .trending .card:hover{
+    border:5px solid var(--bs-primary);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8); /* this adds the "card" effect */
+
+
+}
+
+/* popular end */
+
+
+
+/* Listing Start*/
+.listing{
+    justify-content:center;
+    position:relative;
+    height:56.25em;
+    top:100px;
+    width:100%;
+    /* border:5px solid var(--bs-primary); */
+    padding-left:24px;
+    padding:8px 10px;
+    background-color:var(--bs-dark);
+}
+
+
+.listing .all-collection{
+    width: 100%;
+    position:relative;
+   
+}
+
+.listing .all-collection .show-list{
+    display:flex;
+    justify-content:space-between;
+    border:2px solid var(--bs-gray-dark);
+    color:var(--bs-light);
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.listing .all-collection .show-list .info{
+    justify-content:space-between;
+    align-items:center;
+    padding-left: 12px;
+}
+
+
+
+.listing .all-collection .show-list .strong{
+    color: var(--bs-yellow);
+}
+
+.listing .all-collection .show-list .strong .bi-cast{
+    padding-right:12px;
+    padding-left:6px;
+    color: var(--bs-primary);
+
+}
+.listing .all-collection .show-list .strong:hover{
+    color: var(--bs-primary);
+
+}
+/* Listing End */
+
+
+/* Footer start */
+.footer{
+    bottom:5px;
+    background-color: var(--bs-gray);
+}
+
+
+
+/* Footer end */
